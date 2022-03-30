@@ -18,12 +18,12 @@ type User {
 }
 
 type Book {
-  bookId: int
+  bookId: Int
   authors: [String]
   description: String
-  title: string
-  image: string 
-  link: string
+  title: String
+  image: String 
+  link: String
 }
 
 input BookInput {
