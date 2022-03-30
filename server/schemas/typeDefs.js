@@ -18,7 +18,7 @@ type User {
 }
 
 type Book {
-  bookId: Int
+  bookId: String
   authors: [String]
   description: String
   title: String
@@ -27,7 +27,7 @@ type Book {
 }
 
 input BookInput {
-  bookId: Int
+  bookId: String
   authors: [String]
   description: String
   title: String
@@ -43,7 +43,7 @@ input BookInput {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
     saveBook(input: BookInput): User
-    removeBook(bookId: ID!): User
+    removeBook(bookId: String!): User
   }
 `;
 
